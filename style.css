@@ -1,0 +1,19 @@
+form {
+    display: block;
+    margin: 50px auto;
+    width: 100%;
+}
+
+#confirmacao {
+    display: none;
+}
+
+#servico_cliente p {
+    font-size: small;
+    margin: 0;
+}
+
+footer p {
+    text-align: center;
+}
+
