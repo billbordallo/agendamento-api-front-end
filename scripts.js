@@ -93,6 +93,8 @@ document.getElementById('form-agendamento').addEventListener('submit', function(
     document.getElementById('servico_cliente_resumo').innerHTML = inputServicoCliente;
     document.getElementById('mensagem_cliente_resumo').innerHTML = inputMensagemCliente;
     document.getElementById('status_agendamento_resumo').innerHTML = inputStatusAgendamento;
+    // Removo o elemento #section-form
+    document.getElementById('section-form').style.display = 'none';
     // Exibir a mensagem de confirmação
     document.getElementById('confirmacao').style.display = 'block';
   }
@@ -155,4 +157,3 @@ const insertNewServico = (nome_servico, desc_servico, duracao_servico, valor_ser
   servicosCliente.appendChild(info);
   servicosCliente.appendChild(breakRow);
 }
-

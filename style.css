@@ -1,3 +1,11 @@
+header {
+    padding-bottom: 1rem;
+}
+
+main {
+    padding-top: 1rem;
+}
+
 form {
     display: block;
     margin: 50px auto;
@@ -17,3 +25,17 @@ footer p {
     text-align: center;
 }
 
+#clima {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: normal;
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+nav ul#previsao li {
+    text-align: center;
+}

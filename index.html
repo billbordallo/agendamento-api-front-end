@@ -10,60 +10,64 @@
 </head>
 <body>
     <header>
+        <nav>
+            <a href="index.html">
+                <img src="img/agenda-facil-logo.png" alt="Agenda Fácil">
+            </a>
+        </nav>
         <h1>Agendamento online</h1>
-
     </header>
     <main>
-        <section id="form-agendamento">
+        <section id="section-form">
             <h2>Agende seu horário:</h2>
             <p>Olá, <br>seja muito bem-vindo(a) ao serviço de agendamento online! 😊<br>
-                Por favor, preencha o formulário abaixo para realizar o seu agendamento com o profissional <span>João da Silva</span>:</p>
-                <form id="form-agendamento" action="#" method="post">
-                    <input type="hidden" id="status_agendamento" name="status_agendamento" value="Aguardando confirmação">
-                    <label for="nome_cliente">Nome:</label>
-                    <input type="text" name="nome_cliente" id="nome_cliente" required>
-                    <br>
-                    <label for="email_cliente">E-mail:</label>
-                    <input type="email" name="email_cliente" id="email_cliente" required>
-                    <br>
-                    <label for="celular_cliente">Telefone:</label>
-                    <input type="tel" name="celular_cliente" id="celular_cliente" required>
-                    <br>
-                    <label for="endereco_cliente">Endereço completo:</label>
-                    <input type="text" name="endereco_cliente" id="endereco_cliente" required>
-                    <br>
-                    <label for="data_cliente">Data:</label>
-                    <input type="date" name="data_cliente" id="data_cliente" required>
-                    <br>
-                    <label for="hora_cliente">Hora:</label>
-                    <input type="time" name="hora_cliente" id="hora_cliente" required>
-                    <br>
-                    
-                    <fieldset>
-                        <legend>Escolha o serviço desejado:</legend>
-                        <div id="servico_cliente">
-                          
-                        </div>
-                    </fieldset>
-                    <br>
-                    <label for="mensagem_cliente">Mensagem/observações (opcional):</label>
-                    <textarea name="mensagem_cliente" id="mensagem_cliente"></textarea>
-                    <input type="submit" value="Agendar">
-                </form>
-            </section>
-            <section id="confirmacao">
-                <h2>Resumo do agendamento</h2>
-                <p>Obrigado por realizar o agendamento conosco! Aqui está um resumo da sua solicitação:</p>
-                <p><strong>Nome:</strong> <span id="nome_cliente_resumo"></span></p>
-                <p><strong>E-mail:</strong> <span id="email_cliente_resumo"></span></p>
-                <p><strong>Telefone:</strong> <span id="celular_cliente_resumo"></span></p>
-                <p><strong>Endereço:</strong> <span id="endereco_cliente_resumo"></span></p>
-                <p><strong>Data:</strong> <span id="data_cliente_resumo"></span></p>
-                <p><strong>Hora:</strong> <span id="hora_cliente_resumo"></span></p>
-                <p><strong>Serviço:</strong> <span id="servico_cliente_resumo"></span></p>
-                <p><strong>Mensagem:</strong> <span id="mensagem_cliente_resumo"></span></p>
-                <p><strong>Status:</strong>  <span id="status_agendamento_resumo">Aguardando confirmação</span></p>
-            </section>
+                Por favor, preencha o formulário abaixo para realizar o seu agendamento:</p>
+            <form id="form-agendamento" action="#" method="post">
+                <input type="hidden" id="status_agendamento" name="status_agendamento" value="Aguardando confirmação">
+                <label for="nome_cliente">Nome:</label>
+                <input type="text" name="nome_cliente" id="nome_cliente" required>
+                <br>
+                <label for="email_cliente">E-mail:</label>
+                <input type="email" name="email_cliente" id="email_cliente" required>
+                <br>
+                <label for="celular_cliente">Telefone:</label>
+                <input type="tel" name="celular_cliente" id="celular_cliente" required>
+                <br>
+                <label for="endereco_cliente">Endereço completo:</label>
+                <input type="text" name="endereco_cliente" id="endereco_cliente" required>
+                <br>
+                <label for="data_cliente">Data:</label>
+                <input type="date" name="data_cliente" id="data_cliente" required>
+                <br>
+                <label for="hora_cliente">Hora:</label>
+                <input type="time" name="hora_cliente" id="hora_cliente" required>
+                <br>
+                
+                <fieldset>
+                    <legend>Escolha o serviço desejado:</legend>
+                    <div id="servico_cliente">
+                        
+                    </div>
+                </fieldset>
+                <br>
+                <label for="mensagem_cliente">Mensagem/observações (opcional):</label>
+                <textarea name="mensagem_cliente" id="mensagem_cliente"></textarea>
+                <input type="submit" value="Agendar">
+            </form>
+        </section>
+        <section id="confirmacao">
+            <h2>Resumo do agendamento</h2>
+            <p>Obrigado por realizar o agendamento conosco! Aqui está um resumo da sua solicitação:</p>
+            <p><strong>Nome:</strong> <span id="nome_cliente_resumo"></span></p>
+            <p><strong>E-mail:</strong> <span id="email_cliente_resumo"></span></p>
+            <p><strong>Telefone:</strong> <span id="celular_cliente_resumo"></span></p>
+            <p><strong>Endereço:</strong> <span id="endereco_cliente_resumo"></span></p>
+            <p><strong>Data:</strong> <span id="data_cliente_resumo"></span></p>
+            <p><strong>Hora:</strong> <span id="hora_cliente_resumo"></span></p>
+            <p><strong>Serviço:</strong> <span id="servico_cliente_resumo"></span></p>
+            <p><strong>Mensagem:</strong> <span id="mensagem_cliente_resumo"></span></p>
+            <p><strong>Status:</strong>  <span id="status_agendamento_resumo">Aguardando confirmação</span></p>
+        </section>
     </main>
     <footer>
         <p>Desenvolvido por <a href="https://github.com/billbordallo" target="_blank">Bill Bordallo</a></p>
